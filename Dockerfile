@@ -4,7 +4,7 @@ MAINTAINER Michele Cantelli <emmekappa@gmail.com>
 
 ENV DEBIAN_FRONTEND=noninteractive
 ENV JOBSERVER_HOME=/spark-jobserver-0.5.1
-ENV JOBSERVER_CONF=JOBSERVER_HOME/sparkcluster.conf
+ENV JOBSERVER_CONF=$JOBSERVER_HOME/sparkcluster.conf
 EXPOSE 8090
 
 ADD *.sh $JOBSERVER_HOME/
