@@ -24,11 +24,12 @@ JAVA_OPTS="-Xmx5g -XX:MaxDirectMemorySize=512M
 
 MAIN="spark.jobserver.JobServer"
 
-conffile=$(ls -1 $appdir/*.conf | head -1)
-if [ -z "$conffile" ]; then
-  echo "No configuration file found"
-  exit 1
-fi
+conffile=$JOBSERVER_CONF
+#conffile=$(ls -1 $appdir/*.conf | head -1)
+#if [ -z "$conffile" ]; then
+#  echo "No configuration file found"
+#  exit 1
+#fi
 
 if [ -f "$appdir/settings.sh" ]; then
   . $appdir/settings.sh
