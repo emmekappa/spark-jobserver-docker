@@ -1,5 +1,4 @@
-#FROM ubuntu:trusty
-FROM epahomov/docker-spark
+FROM emmekappa/docker-spark
 
 MAINTAINER Michele Cantelli <emmekappa@gmail.com>
 
