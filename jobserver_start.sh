@@ -8,3 +8,4 @@ echo "" >> $JOBSERVER_CONF
 export MASTER="spark://${SPARK_MASTER_PORT_7077_TCP_ADDR}:${SPARK_MASTER_PORT_7077_TCP_PORT}"
 echo "spark { master = \"${MASTER}\" }" >> $JOBSERVER_CONF 
 $JOBSERVER_HOME/_server_start.sh
+tail -f /dev/null
