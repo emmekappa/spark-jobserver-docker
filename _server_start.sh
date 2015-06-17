@@ -48,7 +48,7 @@ if [ -z "$SPARK_CONF_DIR" ]; then
 fi
 
 # Pull in other env vars in spark config, such as MESOS_NATIVE_LIBRARY
-. $SPARK_CONF_DIR/spark-env.sh
+#. $SPARK_CONF_DIR/spark-env.sh
 
 pidFilePath=$appdir/$PIDFILE
 
